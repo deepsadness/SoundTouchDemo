@@ -4,7 +4,7 @@
 
 解压
 
-### 复制代码到`src/main/cpp/`
+### 2. 复制代码到`src/main/cpp/`
 #### 复制 include
 ![image.png](https://upload-images.jianshu.io/upload_images/1877190-c283be0c18925b25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -26,7 +26,7 @@
 ![image.png](https://upload-images.jianshu.io/upload_images/1877190-7ded0dc6ae510783.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-### 修改
+### 3. 修改代码
 #### 修改源代码 `STTypes.h`
 ##### 修改采样率为16位
 ![image.png](https://upload-images.jianshu.io/upload_images/1877190-47accaea2fa0c782.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -89,7 +89,7 @@ target_link_libraries( # Specifies the target library.
 
 这样就可以了~~
 
-### 尝试处理一下`wav`文件
+### 4. 尝试处理一下`wav`文件
 复制和修改实例代码中的`ExampleActivity`
 - 修改成如下
 ```java
@@ -338,6 +338,5 @@ public class GenericFileProvider extends FileProvider {}
 ### Done
 ![image.png](https://upload-images.jianshu.io/upload_images/1877190-4cd66bbcb8764d17.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### demo位置
 
 
