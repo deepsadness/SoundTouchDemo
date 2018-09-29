@@ -6,37 +6,37 @@
 
 ### 2. 复制代码到`src/main/cpp/`
 #### 复制 include
-![image.png](https://upload-images.jianshu.io/upload_images/1877190-c283be0c18925b25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![copy_include.png](https://github.com/deepsadness/SoundTouchDemo/tree/master/art/copy_include.png)
 
 #### 复制 source/SoundTouch
-![image.png](https://upload-images.jianshu.io/upload_images/1877190-031b83b9a8141034.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![copy_c_source.png](https://github.com/deepsadness/SoundTouchDemo/tree/master/art/copy_c_source.png)
 
 #### 复制 source/SoundStretch下部分代码
 因为要用到wavFile所以就复制这两个
-![image.png](https://upload-images.jianshu.io/upload_images/1877190-1eb3318091deff84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![copy_wav.png](https://github.com/deepsadness/SoundTouchDemo/tree/master/art/copy_wav.png)
 
 
 #### 示例复制
 ##### cpp
 `source\Android-lib\jni\soundtouch-jni.cpp`
-![image.png](https://upload-images.jianshu.io/upload_images/1877190-eb51dd1b17252481.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![copy_jni.png](https://github.com/deepsadness/SoundTouchDemo/tree/master/art/copy_jni.png)
 
 ##### java
 将示例的java文件复制到自己的包下面
-![image.png](https://upload-images.jianshu.io/upload_images/1877190-7ded0dc6ae510783.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![copy_java.png](https://github.com/deepsadness/SoundTouchDemo/tree/master/art/copy_java.png)
 
 
 ### 3. 修改代码
 #### 修改源代码 `STTypes.h`
 ##### 修改采样率为16位
-![image.png](https://upload-images.jianshu.io/upload_images/1877190-47accaea2fa0c782.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![modify_sttypes.png](https://github.com/deepsadness/SoundTouchDemo/tree/master/art/modify_sttypes.png)
 
 ##### 注释优化选项（实际上不注释也能正常使用？）
-![image.png](https://upload-images.jianshu.io/upload_images/1877190-fec9bdee020f3899.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![modify_sttypes_2.png](https://github.com/deepsadness/SoundTouchDemo/tree/master/art/modify_sttypes_2.png)
 
 ##### 修改JNI的方法名的包名
 一口气全部替换掉
-![image.png](https://upload-images.jianshu.io/upload_images/1877190-407ab0bde8d8a1ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![replace_jni_method.png](https://github.com/deepsadness/SoundTouchDemo/tree/master/art/replace_jni_method.png)
 
 
 ##### 修改cmake
@@ -85,7 +85,7 @@ target_link_libraries( # Specifies the target library.
 ```
 
 - java文件中修改库的名字
-![image.png](https://upload-images.jianshu.io/upload_images/1877190-2e5ba565a4b40c17.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![replace_lib_name.png](https://github.com/deepsadness/SoundTouchDemo/tree/master/art/replace_lib_name.png)
 
 这样就可以了~~
 
@@ -336,7 +336,7 @@ public class GenericFileProvider extends FileProvider {}
 ```
 
 ### Done
-![image.png](https://upload-images.jianshu.io/upload_images/1877190-4cd66bbcb8764d17.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![result.png](https://github.com/deepsadness/SoundTouchDemo/tree/master/art/result.png)
 
 
 
