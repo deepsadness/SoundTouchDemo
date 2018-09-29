@@ -284,7 +284,6 @@ public class ExampleActivity extends Activity implements OnClickListener {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        // 选取图片的返回值
         if (requestCode == 2) {
             if (resultCode == RESULT_OK && data != null && data.getData() != null) {
                 Uri uri = data.getData();
@@ -298,7 +297,7 @@ public class ExampleActivity extends Activity implements OnClickListener {
                         return;
                     }
                     cursor.moveToFirst();
-                    String filePath = cursor.getString(0); // 图片编号
+                    String filePath = cursor.getString(0);
                     Toast.makeText(this, "choose file path=" + filePath, Toast.LENGTH_SHORT).show();
                     srcFile = new File(filePath);
                     editSourceFile.setText(srcFile.getAbsolutePath());
@@ -333,6 +332,14 @@ public class GenericFileProvider extends FileProvider {}
                 android:resource="@xml/provider_paths"/>
         </provider>
     </application>
+```
+
+- provider_paths.xml
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="external_files" path="."/>
+</paths>
 ```
 
 ### Done
